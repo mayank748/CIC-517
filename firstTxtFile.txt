@@ -1,7 +1,0 @@
-This message is from master branch
-this is from second
-this is to get conflict
-this is to create merge conflict
-this message is from bhagyaraju
-this change is from third file
-
