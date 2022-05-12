@@ -1,16 +1,21 @@
 #! /bin/bash -x
 
-echo "Welcome to shell script"
+#for loop
+for file in `ls *.txt`
+do
+	echo $file
+done
 
-#initialize a vriable
-read -p "Enter your name " fullName
-
-echo "Enter your city "
-read city
-
-#fullName="Mayank Singh"
-
-echo $fullName
-echo $city
+for((i=0;i<10;i++))
+do
+	echo $i
+done
 
 
+#while loop
+count=0
+while [ $count -le 5 ]
+do
+	echo $count
+	((count++))
+done
