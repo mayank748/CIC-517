@@ -1,21 +1,16 @@
 #! /bin/bash -x
 
-#for loop
-for file in `ls *.txt`
-do
-	echo $file
-done
+function nonParam(){
+#body of function
+	echo "non param function"
+}
 
-for((i=0;i<10;i++))
-do
-	echo $i
-done
+function param(){
+	local firtVar=$1
+	echo $1
+#body of function
+}
 
-
-#while loop
-count=0
-while [ $count -le 5 ]
-do
-	echo $count
-	((count++))
-done
+nonParam
+echo "***************************************"
+param "This is from param function"
