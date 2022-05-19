@@ -18,7 +18,7 @@ function TakeUserInput(){
 		myArray[$i]=$userInput
 	done
 }
-
+#sum=num+sum
 function printArray(){
 	for((i=0;i<${#myArray[@]};i++))
 	do
@@ -31,9 +31,9 @@ function printArray(){
 	done
 }
 
-
 value=''
 userInput=''
+
 read -p "length of array " arryLength
 TakeUserInput $arryLength
 printArray
