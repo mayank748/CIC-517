@@ -11,14 +11,14 @@ declare -a myArray
 #echo "to get specific array value " ${myArray[2]}
 
 function TakeUserInput(){
-	local arlength=$1
+	local arlength=$1  #3
 	for((i=0;i<arlength;i++))
 	do
 		read -p "Enter the value " userInput
 		myArray[$i]=$userInput
 	done
 }
-#sum=num+sum
+
 function printArray(){
 	for((i=0;i<${#myArray[@]};i++))
 	do
@@ -35,7 +35,7 @@ value=''
 userInput=''
 
 read -p "length of array " arryLength
-TakeUserInput $arryLength
+TakeUserInput $arryLength  #3
 printArray
 
 echo $value
